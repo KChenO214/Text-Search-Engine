@@ -5,9 +5,15 @@ Total corpus size, top 10 most relevant documents along with top 10 of each BM25
 
 *Bash file is written to work on Ubuntu linux terminal
 **Has a variable to store the class path of the jsoup jar file to be used
-**Takes in 2 arguments:
-	1 What the directory of the files you want to read from
-	2 What the directory is that you want to write to
+**Takes in multiple arguments (minimum 3: a query term, directory of html files, and a directory to be written to):
+	1 query term weight 1 (how important is the term in comparison to the other terms)
+	2 query term 1
+	3 query term weight 2
+	4 query term 2
+	5 query term weight N
+	6 query term N
+	7 What the directory of the files you want to read from
+	8 What the directory is that you want to write to
 
 Steps to run program
 	In the bash script retrieve.sh have the CLASSPATH variable set to the jsoup jar file directory as well as setting javac and java to the main class directory
